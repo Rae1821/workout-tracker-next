@@ -5,6 +5,7 @@ import { quoteData } from "@/lib/quoteData";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import LoginGoogle from "./LoginGoogle";
 
 const Welcome = () => {
 
@@ -45,12 +46,9 @@ const Welcome = () => {
                 </p>
                 <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
                 <Button asChild>
-                     {/* <Link href="/sign-in">Sign In</Link> */}
-                    <a href="/api/auth/login">Login</a> 
+                     <LoginGoogle />
                 </Button>
-                <Button asChild>
-                  <a href="/api/auth/logout">Logout</a>
-                </Button>
+              
                 </div>
             </div>
             <Image

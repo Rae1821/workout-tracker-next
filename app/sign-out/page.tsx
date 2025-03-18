@@ -1,4 +1,4 @@
-import { signOut } from "@/auth"
+import { signOut } from "@/auth-old"
 import { Button } from "@/components/ui/button"
 
 
