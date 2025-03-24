@@ -3,9 +3,10 @@
 import { Badge } from "@/components/ui/badge";
 import { quoteData } from "@/lib/quoteData";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
-import LoginGoogle from "./LoginGoogle";
+// import { Button } from "./ui/button";
+// import LoginForm from "./LoginForm";
 
 const Welcome = () => {
 
@@ -45,10 +46,9 @@ const Welcome = () => {
                 <span className="text-sm">{randomQuote.author}</span>
                 </p>
                 <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-                <Button asChild>
-                     <LoginGoogle />
-                </Button>
-              
+                <Link href="/sign-in">
+                  Sign In
+                </Link>
                 </div>
             </div>
             <Image
